@@ -407,6 +407,36 @@ body {
   }
 }
 
+._imgIphone {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+._imgIphone img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+
+  transition: transform 0.3s ease;
+}
+
+._imgIphone img:hover {
+  transform: translateY(-10px);
+}
+
+._imgIphone img:first-child {
+  transform: translateY(20px);
+  opacity: 0.9;
+}
+
+._imgIphone img:last-child {
+  transform: translateY(0);
+}
+
 ._imgContainer {
   display: flex;
   flex-wrap: wrap;
